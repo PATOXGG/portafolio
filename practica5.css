@@ -1,0 +1,19 @@
+#titulo1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#titulo2{
+    text-align: center;
+    color: white;
+}
+*{
+    color: white;
+}
+#ciudad{
+    color: black;
+}
+#enviar{
+    color: black;
+}
+#borrar{
+    color: black;
+}

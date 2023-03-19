@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>praactica 5</title>
+    <link rel="stylesheet" href="practica5.css">
+</head>
+<body style="background-color: rgb(82, 73, 73);">
+    <h1 id="titulo1" style="color: white ;text-align: center; ">Servicios de Internet y Telefonia</h1>
+    <h2 id="titulo2">Contrato de servicios</h2>
+    <form action="">
+        <fieldset>
+            <legend>Datos del cliente</legend> 
+                <table align="center">
+                    <tbody>
+                        <tr>
+                            <td>
+                                
+                                <label for="nombre">Nombre </label>
+                                <input type="text"
+                                placeholder="Nombre"
+                                maxlength="20"
+                                name="nombre"
+                                id="nombre"
+                                required
+                                /> <br><br>
+                                <label  id="ciudadd" for="ciudadd">Ciudad</label><br><br>
+                                <select name="ciudad" id="ciudad" size="s">
+                                    <option name="ciudad" id="ciudad" value="">san luis potosi</option>
+                                    <option name="ciudad" id="ciudad"value="">matehuala</option>
+                                    <option name="ciudad" id="ciudad"value="">cd. valles</option>
+                                    <option name="ciudad" id="ciudad"value="">queretaro</option>
+                                    <option name="ciudad" id="ciudad"value="">guanajuato</option>
+                                    <option name="ciudad" id="ciudad"value="">sonora</option>
+                                </select>
+                            </td>
+                            <td>
+                                <label for="ap">Apellido Paterno</label>
+                                <input type="text"
+                                placeholder="Apellido paterno"
+                                maxlength="20"
+                                name="ap"
+                                id="ap"
+                                required
+                                />
+                            </td>
+                            <td>
+                                <label for="am">Apellido Materno</label>
+                                <input type="text"
+                                placeholder="Apellido Materno"
+                                maxlength="20"
+                                name="am"
+                                id="am"
+                                required
+                                />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+        </fieldset>
+    </form>
+    <form action="">
+        <fieldset>
+            <legend>Servicio a contratar</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="tipo" >Selecciona el tipo de servicio a contratar</label><br><br>
+                            <label for="Telefonica">Linea Telefonica</label>
+                            <input type="checkbox" name="Telefonica" id="Telefonica">
+                            <label for="internet">Servicio de internet</label>
+                            <input type="checkbox" name="internet" id="internet">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </form>
+    <form action="">
+        <fieldset>
+            <legend>Forma de pago</legend>
+            <label for="tdc">TDC</label>
+            <input type="radio" id="debito" name="debito"><br>
+            <label for="debito">Tarjet de debito</label>
+            <input type="radio" id="debito" name="debito"><br>
+            <label for="debito">Pago en Efectivo</label>
+            <input type="radio" id="debito" name="debito"><br>
+            <label for="debito">Pago mediante Cheque</label>
+            <input type="radio" id="debito" name="debito"><br>
+            <label for="debito">Transferencia bancaria</label>
+            <input type="radio" id="debito" name="debito"><br>
+            <label for="debito">Deposito bancario</label>
+            <input type="radio" id="debito" name="debito"><br>
+            <label for="debito">Pago en OXXO</label>
+            <input type="radio" id="debito" name="debito"><br>
+
+            <input type="submit" name="enviar" id="enviar" value="Enviar datos"/>   
+            <input type="reset" name="borrar" id="borrar" value="Borrar datos"/>
+        </fieldset>
+    </form>
+    
+    <H2 style="text-align: center;">Practica 5</H2>
+    <h3 style="text-align: center;">HTML y CSS</h3>
+    <h3 style="text-align: center;">Primavera 2023</h3>
+</body>
+</html>
