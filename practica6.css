@@ -1,0 +1,51 @@
+#encabezado1:hover{
+    width: 500px; 
+    height: 150px; 
+
+    background: #42ca86;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -ms-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    transform: skew(20deg);
+    -moz-border-radius: 50px;
+    -webkit-border-radious: 50px;
+    border-radius: 50px;
+}
+#titulo1:hover{
+    font-family: 'Work Sans', sans-serif;
+    color: #555;
+    font-size: larger;
+}
+
+#encabezado1{
+    width: 500px; 
+    height: 150px; 
+
+    background: #3341c4;
+}
+#titulo1{
+    color: bisque;
+}
+#encabezado1:active{
+    width: 500px; 
+    height: 150px; 
+
+    background: #f1a955;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -ms-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    transform: skew(20deg);
+    -moz-border-radius: 50px;
+    -webkit-border-radious: 50px;
+    border-radius: 50px;
+    -moz-box-shadow:#1a181d 20px 10px;
+    box-shadow: #3d3b3f 20px 10px;
+    
+}
+#titulo1:active{
+    font-family: 'Work Sans', sans-serif;
+    color: #555;
+    font-size: larger;
+}
