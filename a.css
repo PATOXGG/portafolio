@@ -1,0 +1,10 @@
+#a{
+    display: block;
+    background: #00bef8;
+    border:1px solid #000000;
+    -moz-border-radius: 1px;
+    -webkit-border-radious: 1px;
+    border-radius: 1px;
+    width: 900px;
+
+}
