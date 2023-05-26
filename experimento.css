@@ -1,0 +1,200 @@
+  header {
+  
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    border:5px solid #000000;
+
+    -moz-border-radius: 20px;
+    -webkit-border-radious: 20px;
+    border-radius: 20px;
+
+
+    background: radial-gradient(center, circle, #ff00ff 0%,#91ffc3 100%);
+    background: -webkit-radial-gradient(center, circle, #ff00ff 0%,#91ffc3 100%);
+    background: radial-gradient(top, elipse, #ff00ff 0%,#91ffc3  100%);
+
+  }
+  
+  nav {
+    float: left;
+  }
+  
+  nav ul {
+    list-style: none;
+    overflow: hidden; 
+  }
+  
+  nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #ffffffe1 ;
+    text-decoration: none;
+    font-family: 'Concert One', cursive;
+  }
+  nav ul li:hover {
+    background: #d9b2f8;
+    border:2px solid #000000;
+    -moz-border-radius: 100px;
+    -webkit-border-radious: 100px;
+    border-radius: 100px;
+    
+  }
+  body{
+    background-color: rgb(168, 123, 250);
+    
+  }
+
+  section img{
+    margin-left: 50px;
+    width: 100px;
+    filter: grayscale(80%);
+
+  }
+
+  section img:hover{
+    cursor: crosshair;
+    
+    margin-left: 50px;
+ 
+    filter: grayscale(0%);
+  }
+
+  h1{
+    font-size: 50px;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    color: #fafafad5;
+  }
+#h1{
+    font-size: 50px;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    color: #fafafad5;
+  }
+  
+  #im1{
+    border: #000000, 5px;
+    background-color: #05F3AB;
+    box-shadow: #0044fd;      
+    -moz-border-radius: 20px;
+    -webkit-border-radious: 20px;
+    border-radius: 20px;    
+    align-self: center; 
+
+    text-align: center;
+  }
+/*BLOG*/
+#eliminar{
+  display: block;
+  background: #00bef8;
+  border:2px solid #000000;
+
+  width: 95px;
+  -moz-border-radius: 20px;
+  -webkit-border-radious: 20px;
+  border-radius: 20px;
+  margin-left: 640px;
+}
+
+
+#guardar{
+  display: block;
+  background: #00bef8;
+  border:3px solid #000000;
+
+  width: 90px;
+  -moz-border-radius: 20px;
+  -webkit-border-radious: 20px;
+  border-radius: 20px;
+  margin-left: 639px;
+
+
+}
+body {
+  --dile-spinner-color: yellow;
+  --dile-spinner-dot-size: 3px;
+}
+
+#parrafo1{
+  font-size: 25px;
+  text-align: justify;
+  background-color: blueviolet;
+  color: rgba(255, 255, 255, 0.897);
+  font-family: 'Libre Baskerville', serif;
+  font-family: 'Merriweather', serif;
+  -moz-border-radius: 10px;
+  -webkit-border-radious: 10px;
+  border-radius: 10px; 
+}
+
+#parrafo1 :hover{
+
+  text-align: justify;
+  background: radial-gradient(center, circle, #804580 0%,#8ebea4 100%);
+  background: -webkit-radial-gradient(center, circle, #804580 0%,#8ebea4 100%);
+  background: radial-gradient(top, elipse, #804580 0%,#8ebea4  100%);
+
+  color: rgba(255, 255, 255, 0.897);
+  font-family: 'Libre Baskerville', serif;
+  font-family: 'Merriweather', serif;
+  -moz-border-radius: 10px;
+  -webkit-border-radious: 10px;
+  border-radius: 10px; 
+
+  border:3px solid #000000;
+}
+
+#referencia{
+  font-size: 25px;
+  text-align: justify;
+  text-align: center;
+  background-color: rgb(65, 59, 71);
+  color: rgba(255, 255, 255, 0.897);
+  font-family: 'Libre Baskerville', serif;
+  font-family: 'Merriweather', serif;
+  -moz-border-radius: 10px;
+  -webkit-border-radious: 10px;
+  border-radius: 10px; 
+}
+
+#referencia :hover{
+
+  text-align: justify;
+  text-align: center;
+  background-color: blueviolet;
+  color: rgba(255, 255, 255, 0.897);
+  font-family: 'Libre Baskerville', serif;
+  font-family: 'Merriweather', serif;
+  -moz-border-radius: 10px;
+  -webkit-border-radious: 10px;
+  border-radius: 10px; 
+
+  border:3px solid #000000;
+}
+#i{
+  text-align: center;
+}
+#video{
+  text-align: center;
+}
+#correo{
+  text-align: center;
+}
+#imagen{
+  text-align: center;
+  filter: grayscale(80%);
+}
+#imagen :hover{
+  filter: grayscale(0%);
+}
+
+
+

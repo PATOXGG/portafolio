@@ -70,16 +70,18 @@
         <input type="submit" name="fecha" id="fecha" />   <br><br>
         <label for="color">selecciona tu color favorito</label>   
         <input type="color" name="color" id="color"/>  
+
         <h3>metodo de pago</h3>
-        <input name="casilla 1" type="checkbox" value="credito "checked/>   
+
+        <input name="casilla 1" type="checkbox" value="credito "/>   
         <label for="casilla1">tarjeta de credito</label> 
         <input name="casilla 2" type="checkbox" value="efectivo "checked/>   
         <label for="casilla2">efectivo</label>   
         <h3>genero</h3>
         <input type="radio" name="genero" id="genero">
         <label for="genero">masculino</label> 
-        <input type="radio" name="generfo" id="generfo">
-        <label for="generfo">femenino</label> 
+        <input type="radio" name="genero" id="generfo">
+        <label for="genero">femenino</label> 
         <h3>categoria de productos</h3>
         <select size="s">
                 <optgroup label="lacteos">
@@ -92,7 +94,22 @@
                     <option value="">res</option>
 
                 </optgroup>
-        </select>        
+        </select> <br><br>
+        <label for="marca">marca de producto</label>
+        <input type="text " name="marca" id="marca" list="marcas">
+        
+        <datalist id="marcas">
+            <option >samsung</option>
+            <option >apple</option>
+            <option >LG</option>
+            <option >huawei</option>
+            <option >xiaomi</option>
+            <option >sony</option>
+            <option >motorola</option>
+            <option >mabe</option>
+        </datalist> 
+        <input type="submit" name="enviar" id="enviar" value="enviar datos"/>   
+        <input type="reset" name="borrar" id="borrar" value="borrar datos"/>
     </fieldset>
     </form>
 </body>

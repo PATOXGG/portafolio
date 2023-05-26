@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menú Desplegable con Submenús en Forma de Lista</title>
+  <style>
+    
+    .container {
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    top: 0;
+    right: 0;
+ 
+  
+  width: 300px; 
+  margin-top: 15px; 
+  margin-right: 15px; 
+}
+
+.text {
+  color: black;
+  text-align: center;
+}
+ .menu {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #b2ffdf;
+      padding: 10px;
+    }
+    
+    .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .menu li {
+      position: relative; 
+      display: inline;
+      margin-right: 5px;
+      
+    }
+    
+    .menu a {
+      padding: 5px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    
+    .menu a:hover {
+      background-color: #007b91;
+      color: #f8f8f8;
+    }
+    
+    .submenu {
+      display: none;
+      position: absolute;
+      background-color: #0e0909;
+      padding: 5px;
+      left: 0; 
+      top: 100%; 
+    }
+    
+    .submenu ul {
+      list-style-type: none; 
+      padding: 0;
+      margin: 0;
+    }
+    
+    .submenu li {
+        color: black;
+      margin-bottom: 5px; 
+    }
+    
+    .menu li:hover .submenu {
+      display: block;
+    }
+  </style>
+</head>
+<body background="imagen/playa.jpg" style="background-repeat:no-repeat ;background-size: 100%;background-attachment: fixed;">
+    
+    <div class="container">
+        <p class="text">Lo mejor de la playa</p>
+      </div>
+
+  <div class="menu">
+    <ul>
+      <li><a href="1">Servicios que se ofrecen</a>
+        <ul class="submenu">
+          <li><a href="2">Hospedaje</a></li>
+          <li><a href="3">Restaurante</a></li>
+          <li><a href="4">Gimnacio</a></li>
+        </ul>
+  </div>
+</body>
+</html>

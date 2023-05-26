@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de densidad</title>
+    <script>
+        function calcularDensidad() {
+            var masa = parseFloat(document.getElementById('masa').value);
+            var volumen = parseFloat(document.getElementById('volumen').value);
+
+            if (!isNaN(masa) && !isNaN(volumen)) {
+                var densidad = masa / volumen;
+                document.getElementById('resultado').innerHTML = "La densidad es: " + densidad.toFixed(2);
+            } else {
+                document.getElementById('resultado').innerHTML = "Por favor, ingresa valores numéricos válidos.";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculadora de densidad</h1>
+    <label for="masa">Masa (en gramos):</label>
+    <input type="text" id="masa" placeholder="Ingresa la masa" /><br>
+
+    <label for="volumen">Volumen (en cm³):</label>
+    <input type="text" id="volumen" placeholder="Ingresa el volumen" /><br>
+
+    <button onclick="calcularDensidad()">Calcular</button>
+
+    <p id="resultado"></p>
+</body>
+</html>

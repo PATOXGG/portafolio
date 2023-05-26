@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Puedes obtener un producto gratis :O</title>
+    <script>
+        function verificarCumple() {
+            var nombre = document.getElementById("nombre").value;
+            var cumple = document.getElementById("cumple").value;
+
+            // Extraer el mes de la fecha de cumpleaños
+            var fechaCumple = new Date(cumple);
+            var mesCumple = fechaCumple.getMonth() + 1; // Los meses en JavaScript van de 0 a 11, por eso se suma 1
+
+            if (mesCumple === 5) {
+                // Mostrar imagen si el cumpleaños es en mayo
+                document.getElementById("imagen").style.display = "block";
+                document.getElementById("mensaje").innerHTML = "Felicidades obtuviste un descuento por tu cumpleaños, " + nombre + "!";
+            } else {
+                // Ocultar imagen si no es en mayo
+                document.getElementById("imagen").style.display = "none";
+                document.getElementById("mensaje").innerHTML = "Lo sentimos no obtuviste descuento, " + nombre + ".";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Verificación de cumpleanos</h1>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required><br>
+    <label for="cumple">Fecha de cumpleanios:</label>
+    <input type="date" id="cumple" required><br>
+    <button onclick="verificarCumple()">Enviar formulario</button>
+    <br>
+    <img id="imagen" src="2x1.jfif" alt="Felicidades obtuviste un 2x1 c:" style="display: none;">
+    <p id="mensaje"></p>
+</body>
+</html>
