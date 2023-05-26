@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG</title>
+    <link rel="stylesheet" href="experimento.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel ="icon" type="image/png" href="moonlogo.jpg">
+    <script src="blog.js"></script>
+
+      
+
+
+    <style>
+        h1,h2{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h1{
+            margin: 15px;
+            font-size: 100px;
+        }
+        section{
+            text-align: center;
+        }
+#cajaformulario{
+float: center;
+padding: 20px;
+border: 1px solid #999999;
+}
+#cajadatos{
+float: center;
+padding: 20px;
+border: 1px solid #999999;
+}
+#clave, #texto{
+width: 200px;
+}
+#cajadatos > div{
+    float: center;
+padding: 5px;
+border-bottom: 1px solid #999999;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #4DAFF6;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #4465FB;
+}
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+</style>
+<script>
+    function iniciar(){
+            var boton=document.getElementById('guardar');
+            boton.addEventListener('click', nuevoitem, false);
+            mostrar();
+        }
+        function nuevoitem(){
+            var clave=document.getElementById('clave').value;
+            var valor=document.getElementById('texto').value;
+            localStorage.setItem(clave,valor);
+            mostrar();
+            document.getElementById('clave').value='';
+            document.getElementById('texto').value='';
+        }
+        function mostrar(){
+            var cajadatos=document.getElementById('cajadatos');
+            cajadatos.innerHTML='';
+            for(var f=0;f<localStorage.length;f++){
+            var clave=localStorage.key(f);
+            var valor=localStorage.getItem(clave);
+            cajadatos.innerHTML+='<div>'+clave+' - '+valor+'</div>';
+            }
+        }
+            window.addEventListener('load', iniciar, false);
+        function elimina()
+            {
+
+                if(confirm('Está Seguro?')){
+                    localStorage.clear();
+                    mostrar();
+                    }
+            }
+</script>
+</head>
+<body>
+    <header>
+        <nav>
+         <ul >
+            <li><a href="experimento.html">Inicio</a></li>
+            <li><a href="experimentoTutorial.html">Tutoriales</a></li>
+            <li><a href="Compra.html">Compra</a></li>
+            <li><a href="experimentoFotos.html">Fotos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="BLOG.html">Blog</a></li>
+            <li><a href="Trivia.html">Trivia</a></li>
+            
+         </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <h1 id="h1">Blog</h1>
+    <h2 id="gi">Foro de preguntas Frecuentes</h2>
+    <section id="cajaformulario">
+        <form name="formulario">
+        <p id="gi">Numero de pregunta o respuesta:<br><input type="text" name="clave" id="clave"></p>
+        <p id="gi">Pregunta o respuesta:<br><textarea name="text" id="texto"></textarea></p>
+        <p><input type="button" name="guardar" id="guardar"
+        value="Guardar"></p>
+        <p><input type="button" name="eliminar" id="eliminar"
+        value="Borrar datos" onclick="elimina()"></p>
+        </form>
+        </section>
+        <section id="cajadatos">
+        </section>
+
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <script src="Trivia.js"></script>
+    <link rel="stylesheet" href="experimento.css">
+    <link rel="stylesheet" href="Trivia.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:wght@500&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+	<script type="text/javascript" src="jspdf.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.addimage.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.standard_fonts_metrics.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.split_text_to_size.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.from_html.js"></script>
+
+    <link href="https://chatcompose.azureedge.net/static/all/global/export/css/main.5b1bd1fd.css" rel="stylesheet">    
+    <script async type="text/javascript" src="https://chatcompose.azureedge.net/static/all/global/export/js/main.a7059cb5.js?user=Iancruz12&lang=ES" 
+    user="Iancruz12" lang="ES"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+         <ul >
+            <li><a href="experimento.html">Inicio</a></li>
+            <li><a href="experimentoTutorial.html">Tutoriales</a></li>
+            <li><a href="Compra.html">Compra</a></li>
+            <li><a href="experimentoFotos.html">Fotos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="BLOG.html">Blog</a></li>
+            <li><a href="Trivia.html">Trivia</a></li>
+            
+         </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="contiene">
+        <h1>Encuesta sobre Progaramcion web</h1>
+        <h2>Trata de responder correctamente</h2>
+    <form>
+    <div id="preguntas">
+        
+        <ul>
+    
+            <li>¿Por que es importante cuidar nuestra piel?</li>
+            <input type="radio" name="r1" id="r1" value="5"/>Por la salud de nuestra piel y que lusca bien<br/>
+            <input type="radio" name="r1" id="r1" value="0"/>Por pasatiempo<br/>
+            <input type="radio" name="r1" id="r1" value="0"/>Por ningun motivo ademas de ser una perdida de tiempo<br/>
+            
+            <li>¿las mascarillas son beneficiosas?</li>
+            <input type="radio" name="r2" id="r2" value="0"/>si claro que lo son<br/>
+            <input type="radio" name="r2" id="r2" value="0"/>para nada<br/>
+            <input type="radio" name="r2" id="r2" value="5"/>al contrario son dañinas<br/>
+    
+            <li>¿por que las mascarillas son buenas?</li>
+            <input type="radio" name="r3" id="r3" value="0"/>por que mi amiga dice que lo son<br/>
+            <input type="radio" name="r3" id="r3" value="5"/>por que pueden penetrar la piel mejor que otros productos de belleza<br/>
+            <input type="radio" name="r3" id="r3" value="0"/>por que si<br/>
+    
+            <li>¿ventajas de las mascarillas?</li>
+            <input type="radio" name="r4" id="r4" value="5"/>son para todo tipo de piel<br/>
+            <input type="radio" name="r4" id="r4" value="0"/>son vendidas en facebook<br/>
+            <input type="radio" name="r4" id="r4" value="5"/>sirven para limpiar la piel<br/>
+            
+            <li>¿organo mas grande del cuerpo?</li>
+            <input type="radio" name="r5" id="r5" value="5"/>la piel<br/>
+            <input type="radio" name="r5" id="r5" value="0"/>los oidos<br/>
+            <input type="radio" name="r5" id="r5" value="0"/>el corazon<br/>
+        </ul>
+        
+    </div>
+    <input type="button" value="Calificar" onclick="califica()">
+    <input type="button" value="Generar" onclick="generar()">
+    </form>
+    <p></p>
+    <p id="total">   </p>
+    <p id="comentario">   </p>
+    <iframe frameborder="0" width="600" height="500"></iframe>
+    </div>
+    <h1>siguenos</h1>
+    <div id="im1">
+        <img  src="gmail_logo_PNG1.png" width="400" height="400" alt="mailto:181884@upslp.edu.mx" usemap="#mapa0">
+        <map name="#mapa0"><area shape="rect" coords="0,20,900,900" href="mailto:181884@upslp.edu.mx"></map>
+        <img src="Logo_de_Facebook.png" alt="https://www.facebook.com/profile.php?id=100068390974783&mibextid=ZbWKwL" usemap="#mapa1" width="400" height="400">
+        <map name="#mapa1"><area shape="rect" coords="0,20,900,900" href="https://www.facebook.com/profile.php?id=100068390974783&mibextid=ZbWKwL" alt="" idwthh="400" eight="400"></map>
+        <img src="instagramlogo.jpg" alt="" usemap="#mapa2" width="400" height="400">
+        <map name="#mapa2"><area shape="rect" coords="0,20,900,900" href="https://instagram.com/moon_slp_?igshid=MzRlODBiNWFlZA==" alt="" width="476" height="476"></map>
+    </div>
+    </body>
+</html>
